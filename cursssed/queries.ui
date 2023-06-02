@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>queries</class>
+ <widget class="QWidget" name="queries">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>737</width>
+    <height>471</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>10</y>
+     <width>501</width>
+     <height>441</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="caseButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>201</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>CASE-Выражение</string>
+   </property>
+   <property name="icon">
+    <iconset theme="window-new"/>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="viewButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>201</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Многотабличный VIEW</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="c1Button">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>201</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>65</red>
+         <green>63</green>
+         <blue>43</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>50</red>
+         <green>50</green>
+         <blue>50</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>65</red>
+         <green>63</green>
+         <blue>43</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="text">
+    <string>Подзапрос в SELECT</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="c2Button">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>140</y>
+     <width>141</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Подзапрос в FROM</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="c3Button">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>201</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Подзапрос в WHERE</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cor1Button">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>220</y>
+     <width>201</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Коррелированный Запрос 1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cor2Button">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>260</y>
+     <width>201</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Коррелированный Запрос 2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cor3Button">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>300</y>
+     <width>201</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Коррелированный Запрос 3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="anyButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>340</y>
+     <width>141</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Запрос с пред. ANY</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="manytablesButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>420</y>
+     <width>201</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Многотабличный запрос</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="c2ComboBox">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>140</y>
+     <width>71</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Драма</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Комедия</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Экшн</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Ужасы</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Фэнтези</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Романтика</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Мистика</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Анимация</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Криминал</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="anyComboBox">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>340</y>
+     <width>71</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Драма</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Комедия</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Экшн</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Ужасы</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Фэнтези</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Романтика</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Мистика</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Анимация</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Криминал</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="allButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>380</y>
+     <width>141</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Запрос с пред. ALL</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="allComboBox">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>380</y>
+     <width>71</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Оплачена</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Не оплачена</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

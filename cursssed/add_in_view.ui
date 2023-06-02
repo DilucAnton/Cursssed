@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>add_in_view</class>
+ <widget class="QWidget" name="add_in_view">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>207</width>
+    <height>687</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Добавить в All Inf</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Название фильма:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLineEdit" name="lineEdit"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Жанр:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QComboBox" name="comboBox_2">
+     <item>
+      <property name="text">
+       <string>Драма</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Комедия</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Экшн</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ужасы</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Фэнтези</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Романтика</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Мистика</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Анимация</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Криминал</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>Год выпуска:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QSpinBox" name="spinBox">
+     <property name="maximum">
+      <number>9999</number>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="label_11">
+     <property name="text">
+      <string>Режиссер</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <widget class="QLineEdit" name="lineEdit_2"/>
+   </item>
+   <item row="9" column="0">
+    <widget class="QLabel" name="label_12">
+     <property name="text">
+      <string>Цена билета:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0">
+    <widget class="QSpinBox" name="spinBox_3">
+     <property name="maximum">
+      <number>99999999</number>
+     </property>
+     <property name="singleStep">
+      <number>100</number>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Имя пользователя:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="0">
+    <widget class="QLineEdit" name="lineEdit_3"/>
+   </item>
+   <item row="13" column="0">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>Фамилия пользователя:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="0">
+    <widget class="QLineEdit" name="lineEdit_4"/>
+   </item>
+   <item row="15" column="0">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>Телефон:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="0">
+    <widget class="QLineEdit" name="lineEdit_5">
+     <property name="inputMask">
+      <string>+7(000)000-00-00</string>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>Дата возврата аренды:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="18" column="0">
+    <widget class="QDateEdit" name="dateEdit"/>
+   </item>
+   <item row="19" column="0">
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>Цена аренды:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="20" column="0">
+    <widget class="QSpinBox" name="spinBox_2">
+     <property name="maximum">
+      <number>999999999</number>
+     </property>
+     <property name="singleStep">
+      <number>1000</number>
+     </property>
+    </widget>
+   </item>
+   <item row="21" column="0">
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>Информация об оплате:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="22" column="0">
+    <widget class="QComboBox" name="comboBox">
+     <item>
+      <property name="text">
+       <string>Оплачена</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Не оплачена</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="23" column="0">
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>Добавить</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
