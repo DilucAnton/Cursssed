@@ -675,6 +675,11 @@ END;
 $$ LANGUAGE plpgsql;
 
 
+CREATE TRIGGER insert_movie_rental
+INSTEAD OF INSERT ON MovieRentalsView
+FOR EACH ROW
+EXECUTE FUNCTION insert_movie_rental_function();
+
 
 CREATE OR REPLACE FUNCTION update_movie_rental_function()
   RETURNS TRIGGER AS $$
@@ -753,3 +758,22 @@ $$ LANGUAGE plpgsql;
 
 CREATE INDEX index_users_firstName ON Users USING BTREE (first_name);
 CREATE INDEX index_users_lastName ON Users USING BTREE (last_name);
+
+
+Индекс GIST используется для индексации данных, 
+которые имеют сложную структуру или требуют особого способа сравнения и поиска.
+
+Операторный класс "gist_trgm_ops" относится к модулю pg_trgm, 
+который предоставляет возможность сравнивать текстовые строки на основе их сходства.
+Он использует алгоритм троек символов (trigram), чтобы определить сходство между строками. 
+Это полезно для поиска по частичным или похожим значениям, таким как номера телефонов.
+
+Команда "CREATE EXTENSION pg_trgm;" устанавливает расширение pg_trgm
+в вашей базе данных PostgreSQL. Расширение pg_trgm добавляет 
+функциональность, связанную с операторным классом gist_trgm_ops, 
+позволяя использовать его для создания индексов GIST
+и выполнения операций поиска на основе сходства строк.
+
+CREATE EXTENSION pg_trgm;
+
+CREATE INDEX idx_users_phone_gist ON users USING GIST (phone gist_trgm_ops);
